@@ -1,19 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 #define int long long
 
-void striker()
+void striker(string s1,string s2)
 {
-    string s1,s2;
-    cin>>s1>>s2;
-    transform(s1.begin(),s1.end(),s1.begin(),::tolower);
-    transform(s2.begin(),s2.end(),s2.begin(),::tolower);
-    if(s1<s2)
-        cout<<-1;
-    else if(s1>s2)
-        cout<<1;
-    else
-        cout<<0;
+    transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+    transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
+    int n=s1.size();
+    for(int i=0;i<n;i++)
+    {
+        if(s1[i]<s2[i])
+        {
+            cout<<-1;
+            return;
+        }
+        else if(s1[i]>s2[i])
+        {
+            cout<<1;
+            return;
+        }
+    }
+    cout<<0;
 }
 
 int32_t main(){
@@ -28,10 +36,13 @@ int32_t main(){
     
     int t=1;
 //    cin>>t;
-    for(int i=0;i<t;i++)
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        // int n;
+        // cin>>n;
+        string s1,s2;
+        cin>>s1>>s2;
+        striker(s1,s2);
         cout<<endl;
     }
      return 0;
