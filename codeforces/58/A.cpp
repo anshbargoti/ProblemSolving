@@ -1,28 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-//#define int long long
-// const int MOD = 1000000007;
-
-void striker()
+void striker(string s)
 {
-    string s;
-    cin>>s;
-    int count=0;
-    int _h,_e,_l,_o;
-    _h=_e=_l=_o=0;
+    string str="hello";
+    int count=0,j=0;
     for(int i=0;i<s.size();i++)
     {
-        if(s[i]=='h')
-            _h=1;
-        else if(s[i]=='e' && _h==1)
-            _e=1;
-        else if(s[i]=='l' && (_e==1 && _l<2))
-            _l++;
-        else if(s[i]=='o' && _l==2)
-            _o=1;
+        if(s[i]==str[j])
+        {
+            j++;
+            count++;
+        }
     }
-    cout<<(_h+_e+_l+_o==5?"YES":"NO");
+    if(count==5)
+    {
+        cout<<"YES";
+        return;
+    }
+    else
+        cout<<"NO";
 }
 
 int32_t main(){
@@ -37,10 +36,13 @@ int32_t main(){
     
     int t=1;
 //    cin>>t;
-    for(int i=0;i<t;i++)
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        // int n;
+        // cin>>n;
+        string s;
+        cin>>s;
+        striker(s);
         cout<<endl;
     }
      return 0;
