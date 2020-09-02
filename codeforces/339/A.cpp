@@ -1,24 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
 #define int long long
 
-// const int MOD = 1000000007;
-
-void striker()
+void striker(string s)
 {
-    string s;
-    cin>>s;
-    s.erase(remove(s.begin(),s.end(),'+'),s.end());
-    sort(s.begin(),s.end());
+    string str="";
+    std::map<char, int> mp;
     for(int i=0;i<s.size();i++)
     {
-        if(i!=(s.size()-1))
-            cout<<s[i]<<"+";
-        else
-            cout<<s[i];
+        if(s[i]!='+')
+            mp[s[i]]++;
     }
+    for(auto ch:mp)
+    {
+        int k=ch.second;
+        while(k--)
+        {
+            str+=ch.first;
+            str+="+";
+        }
+    }
+    for(int i=0;i<str.size()-1;i++)
+        cout<<str[i];
 }
-
 
 int32_t main(){
 
@@ -32,10 +37,13 @@ int32_t main(){
     
     int t=1;
 //    cin>>t;
-    for(int i=0;i<t;i++)
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        // int n;
+        // cin>>n;
+        string s;
+        cin>>s;
+        striker(s);
         cout<<endl;
     }
      return 0;
