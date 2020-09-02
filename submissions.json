@@ -2567,6 +2567,22 @@
     ],
     "timestamp": "Dec/20/2020 22:58"
   },
+  "CF91621143": {
+    "contest_id": 160,
+    "language": "GNU C++14",
+    "path": "codeforces\\160\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Twins",
+    "problem_url": "https://codeforces.com/contest/160/problem/A",
+    "submission_id": "CF91621143",
+    "submission_url": "https://codeforces.com/contest/160/submission/91621143",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Sep/02/2020 13:05"
+  },
   "CF91637235": {
     "contest_id": 58,
     "language": "GNU C++14",
