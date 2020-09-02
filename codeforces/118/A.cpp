@@ -1,18 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-//#define int long long
-// const int MOD = 1000000007;
-
-void striker()
+void striker(string s)
 {
-    string s;
-    cin>>s;
+    transform(s.begin(), s.end(), s.begin(), ::tolower);
     for(int i=0;i<s.size();i++)
     {
-        char x=tolower(s[i]);
-        if(x!='a' && x!='e' && x!='i' && x!='o' && x!='u' && x!='y')
-            cout<<"."<<x;
+        if(s[i]!='a' && s[i]!='e' && s[i]!='i' && s[i]!='o' && s[i]!='u' && s[i]!='y')
+            cout<<"."<<s[i];
     }
 }
 
@@ -28,10 +25,13 @@ int32_t main(){
     
     int t=1;
 //    cin>>t;
-    for(int i=0;i<t;i++)
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        // int n;
+        // cin>>n;
+        string s;
+        cin>>s;
+        striker(s);
         cout<<endl;
     }
      return 0;
