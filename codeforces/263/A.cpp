@@ -3,10 +3,6 @@ using namespace std;
 #define endl '\n'
 #define int long long
 
-// void striker(int arr[M][N])
-// {
-//     return;
-// }
 
 int32_t main(){
 
@@ -18,28 +14,22 @@ int32_t main(){
     freopen("output.txt", "w", stdout);
 #endif
     
-    int t=1;
-//    cin>>t;
-    while(t--)
+    int a,b,ele;
+    int arr[5][5];
+    for(int i=0;i<5;i++)
     {
-        int a,b,ele;
-        int arr[5][5];
-        for(int i=0;i<5;i++)
+        for(int j=0;j<5;j++)
         {
-            for(int j=0;j<5;j++)
+            cin>>ele;
+            arr[i][j]=ele;
+            if(arr[i][j]==1)
             {
-                cin>>ele;
-                arr[i][j]=ele;
-                if(arr[i][j]==1)
-                {
-                    a=2-i;
-                    b=2-j;
-                }
+                a=2-i;
+                b=2-j;
             }
         }
-        cout<<abs(a)+abs(b);
-        // striker(arr);
-        cout<<endl;
     }
+    cout<<abs(a)+abs(b);
+    cout<<endl;
      return 0;
 }
