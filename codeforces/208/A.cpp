@@ -1,29 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-//#define int long long
-// const int MOD = 1000000007;
-
-void striker()
+void striker(string s)
 {
-    string s;
-    cin>>s;
-    int index=0;
-    while(true)
+    string res;
+    for(int i=0;i<s.size()-2;i++)
     {
-        index=s.find("WUB",index);
-        if(index==string::npos)
-            break;
-        s.replace(index,3," ");
-        index+=1;
+        if(s[i]=='W' && s[i+1]=='U' && s[i+2]=='B')
+        {
+            s[i]='.';
+            s[i+1]='.';
+            s[i+2]='.';
+        }
     }
-    // cout<<s;
     for(int i=0;i<s.size();i++)
     {
-        if(s[i]!=' ')
+        if(s[i]!='.')
         {
             cout<<s[i];
-            if(s[i+1]==' ')
+            if(s[i+1]=='.')
                 cout<<" ";
         }
     }
@@ -40,11 +37,15 @@ int32_t main(){
 #endif
     
     int t=1;
-//    cin>>t;
-    for(int i=0;i<t;i++)
+    //cin>>t;
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        string s;
+        cin>>s;
+        if(s.size()<3)
+            cout<<s;
+        else
+            striker(s);
         cout<<endl;
     }
      return 0;
