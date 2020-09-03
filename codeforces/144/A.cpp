@@ -1,34 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-// const int MOD = 1000000007;
-//#define int long long
-
-
-void striker()
+void striker(int n,int arr[],int index_min,int index_max)
 {
-    int n;
-    cin>>n;
-    int maxi=INT_MIN,mini=INT_MAX;
-    int max_index,min_index;
-    int arr[n];
-    for(int i=0;i<n;i++)
-    {
-        cin>>arr[i];
-        if(maxi<arr[i])
-        {
-            maxi=arr[i];
-            max_index=i;
-        }
-        if(mini>=arr[i])
-        {
-            mini=arr[i];
-            min_index=i;
-        }
-    }
-    cout<<(max_index>min_index?max_index+((n-1)-min_index)-1:max_index+((n-1)-min_index));
+    if(index_min<index_max) 
+        cout<<(index_max+(n-1-index_min)-1);
+    else
+        cout<<(index_max+(n-1-index_min));
 }
-
 
 int32_t main(){
 
@@ -41,11 +22,29 @@ int32_t main(){
 #endif
     
     int t=1;
-//    cin>>t;
-    for(int i=0;i<t;i++)
+    //cin>>t;
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        int n;
+        cin>>n;
+        int arr[n];
+        int maxi=INT_MIN,index_max;
+        int mini=INT_MAX,index_min;
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[i];
+            if(arr[i]>maxi)
+            {
+                maxi=arr[i];
+                index_max=i;
+            }
+            if(arr[i]<=mini)
+            {
+                mini=arr[i];
+                index_min=i;
+            }
+        }
+        striker(n,arr,index_min,index_max);
         cout<<endl;
     }
      return 0;
