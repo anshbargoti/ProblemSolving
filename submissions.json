@@ -2567,6 +2567,21 @@
     ],
     "timestamp": "Dec/20/2020 22:58"
   },
+  "CF91786698": {
+    "contest_id": 318,
+    "language": "GNU C++14",
+    "path": "codeforces\\318\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Even Odds",
+    "problem_url": "https://codeforces.com/contest/318/problem/A",
+    "submission_id": "CF91786698",
+    "submission_url": "https://codeforces.com/contest/318/submission/91786698",
+    "tags": [
+      "math",
+      "*900"
+    ],
+    "timestamp": "Sep/04/2020 16:34"
+  },
   "CF91794351": {
     "contest_id": 466,
     "language": "GNU C++14",
