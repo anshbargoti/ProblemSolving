@@ -2,21 +2,25 @@
 using namespace std;
 #define endl '\n'
 #define int long long
- 
+
 void striker(int a,int b,int c)
 {
-    int res=a+b+c;
-    res=max(res,a*b*c);
-    res=max(res,(a+b)*c);
-    res=max(res,a*(b+c));
-    cout<<res; 
+    int mul=a*b*c;
+    int sum=a+b+c;
+    mul=max(mul,sum);
+    if((a>=b && a>=c) || (b>=a && a>=c))
+       mul=max(mul,a*(b+c));
+    else if((c>=a && c>=b) || (b>=c && c>=a))
+        mul=max(mul,(a+b)*c);
+
+    cout<<mul; 
 }
- 
+
 int32_t main(){
- 
+
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
- 
+
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
