@@ -1,21 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-//#define int long long
-// const int MOD = 1000000007;
-
-void striker()
+void striker(int n,int m,int arr[])
 {
-    int n,m;
-    cin>>n>>m;
-    int arr[m];
-    for(int i=0;i<m;i++)
-        cin>>arr[i];
-    sort(arr,arr+m,greater<int>());
-    int mini=INT_MAX;
+    sort(arr,arr+m);
+    int res=INT_MAX;
     for(int i=0;i<=m-n;i++)
-        mini=min(mini,arr[i]-arr[n-1+i]);
-    cout<<mini;
+        res=min(res,arr[i+(n-1)]-arr[i]);
+    cout<<res;
 }
 
 int32_t main(){
@@ -29,11 +23,15 @@ int32_t main(){
 #endif
     
     int t=1;
-//    cin>>t;
-    for(int i=0;i<t;i++)
+    //cin>>t;
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
+        int n,m;
+        cin>>n>>m;
+        int arr[m];
+        for(int i=0;i<m;i++)
+            cin>>arr[i];
+        striker(n,m,arr);
         cout<<endl;
     }
      return 0;
