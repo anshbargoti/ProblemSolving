@@ -1,50 +1,44 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define endl '\n'
+#define int long long
 
-//#define int long long
-// const int MOD = 1000000007;
-
-void striker()
+void striker(int power,int n)
 {
-    int s,n;
-    cin>>s>>n;
-    vector<pair<int,int>> v;
+	vector<pair<int,int>> vc(n);
+    for(int i=0;i<n;i++)
+        cin>>vc[i].first>>vc[i].second;
+    sort(vc.begin(),vc.end());
     for(int i=0;i<n;i++)
     {
-        int x,y;
-        cin>>x>>y;
-        v.push_back(make_pair(x,y));
-    }
-    sort(v.begin(),v.end());
-    for(int i=0;i<n;i++)
-    {
-        if(v[i].first>=s)
+        if(power<=vc[i].first)
         {
-            cout<<"NO";
-            return;
+        	cout<<"NO";
+        	return;
         }
-        s+=v[i].second;
+        power+=vc[i].second;
     }
     cout<<"YES";
 }
 
 int32_t main(){
 
-    ios_base::sync_with_stdio(false);
+	ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
 #ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
 #endif
-    
+	
     int t=1;
-//    cin>>t;
-    for(int i=0;i<t;i++)
+    //cin>>t;
+    while(t--)
     {
-        //cout<<"#Case: "<<i+1<<endl;
-        striker();
-        cout<<endl;
+    	int power,n;
+    	cin>>power>>n;
+    	striker(power,n);
+    	cout<<endl;
     }
-     return 0;
+ 	return 0;
 }
