@@ -12,13 +12,11 @@ void striker(int n,int k)
         cin>>ele;
         arr[i]=5-ele;
     }
-    sort(arr,arr+n,greater<int>());
+    sort(arr,arr+n);
     int count=0;
     for(int i=0;i<n;i++)
         if(arr[i]>=k)
             count++;
-        else
-            break;
     
     cout<<count/3;
 }
