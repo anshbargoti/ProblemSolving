@@ -15,12 +15,10 @@ void striker(int n,int k)
     sort(arr,arr+n,greater<int>());
     int count=0;
     for(int i=0;i<n;i++)
-    {
         if(arr[i]>=k)
             count++;
         else
             break;
-    }
     
     cout<<count/3;
 }
