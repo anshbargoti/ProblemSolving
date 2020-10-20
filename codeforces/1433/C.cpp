@@ -7,29 +7,29 @@ void striker()
     int n;
     cin>>n;
     int arr[n];
-    bool flag=true;
+    set<int> s;
     for(int i=0;i<n;i++)
-        cin>>arr[i];
-    for(int i=0;i<n-1;i++)
     {
-        if(arr[i]!=arr[i+1])
-            flag=false;
+        cin>>arr[i];
+        s.insert(arr[i]);
     }
-    if(flag)
+    if(s.size()==1)
     {
         cout<<-1;
         return;
     }
-    int maxi=*max_element(arr,arr+n);
-    for(int i=0;i<n;i++)
+    auto ele=*s.rbegin();
+    for(int i=0;i<n-1;i++)
     {
-        if(arr[i]==maxi)
+        if(arr[i]!=ele && arr[i+1]==ele) 
         {
-            if((arr[i-1]!=arr[i] && i>0) || (arr[i+1]!=arr[i] && i<n))
-            {
-                cout<<i+1;
-                return;
-            }
+            cout<<i+2;
+            return;
+        }
+        else if(arr[i]==ele && arr[i+1]!=ele)
+        {
+            cout<<i+1;
+            return;
         }
     }
 
