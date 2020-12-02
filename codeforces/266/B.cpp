@@ -1,29 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-//#define int long long
-// const int MOD = 1000000007;
+#define int long long
 
 void striker()
 {
-    int n, t;
-    cin >> n >> t;
+    int n,t;
+    cin>>n>>t;
     string s;
     cin>>s;
-
-    while(t--){
-        for (int i = 0; i < n - 1;)
+    while(t--)
+    {
+        for(int i=1;i<n;i++)
         {
-            if(s[i]=='B' && s[i + 1]=='G')
+            if(s[i]=='G' && s[i-1]=='B')
             {
-                swap(s[i],s[i + 1]);
-                i+=2;
+                swap(s[i],s[i-1]);
+                i++;
             }
-            else i++;
         }
     }
     cout<<s;
-    
 }
 
 int32_t main(){
@@ -44,5 +40,5 @@ int32_t main(){
         striker();
         cout<<endl;
     }
-    return 0;
+     return 0;
 }
