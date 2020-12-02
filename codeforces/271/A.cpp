@@ -24,15 +24,13 @@ void striker()
     map<int,int> visited;
     int year;
     cin>>year;
-    int i=year+1;
-    while(true)
+    for(int i=year+1;i<INT_MAX;i++)
     {
         if(distinct_digit(i,visited))
         {
             cout<<i;
             return;
         }
-        i++;
     }
 }
 
