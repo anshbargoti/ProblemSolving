@@ -4,18 +4,37 @@ using namespace std;
 
 void striker()
 {
-    int arr[5][5]={};
-    for(int i=1;i<=3;i++)
+    vector<vector<int>> arr{{1,1,1},{1,1,1},{1,1,1}};
+    vector<pair<int,int>> vc;
+    for(int i=0;i<3;i++)
     {
-        for(int j=1;j<=3;j++)
-            cin>>arr[i][j];
-    }
-    for(int i=1;i<=3;i++)
-    {
-        for(int j=1;j<=3;j++)
+        for(int j=0;j<3;j++)
         {
-            cout<<(arr[i][j]+arr[i][j+1]+arr[i][j-1]+arr[i-1][j]+arr[i+1][j]+1)%2;
+            int x;
+            cin>>x;
+            if(x&1==1)
+                vc.push_back(make_pair(i,j));
         }
+    }
+    int a,b;
+    for(int i=0;i<vc.size();i++)
+    {
+        a=vc[i].first;
+        b=vc[i].second;
+        arr[a][b]=abs(arr[a][b]-1);
+        if(a>0)
+            arr[a-1][b]=abs(arr[a-1][b]-1);
+        if(b>0)
+            arr[a][b-1]=abs(arr[a][b-1]-1);
+        if(a<2)
+            arr[a+1][b]=abs(arr[a+1][b]-1);
+        if(b<2)
+            arr[a][b+1]=abs(arr[a][b+1]-1);
+    }
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+            cout<<arr[i][j];
         cout<<endl;
     }
 }
