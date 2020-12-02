@@ -24,7 +24,7 @@ void striker()
     map<int,int> visited;
     int year;
     cin>>year;
-    for(int i=year+1;i<INT_MAX;i++)
+    for(int i=year+1;;i++)
     {
         if(distinct_digit(i,visited))
         {
