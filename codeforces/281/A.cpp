@@ -7,7 +7,10 @@ void striker()
     string s;
     cin>>s;
     if(islower(s[0]))
-        cout<<char(toupper(s[0]));
+    {
+        char ch=toupper(s[0]);
+        cout<<ch;
+    }
     else
         cout<<s[0];
     for(int i=1;i<s.size();i++)
