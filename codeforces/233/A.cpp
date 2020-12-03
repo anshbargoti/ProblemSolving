@@ -14,8 +14,8 @@ void striker()
         cout<<-1;
         return;
     }
-    for(int i=n;i>0;i--)
-        cout<<i<<" ";
+    for(int i=1;i<=n;i+=2)
+        cout<<i+1<<" "<<i<<" ";
 }
 
 
