@@ -4,9 +4,15 @@ using namespace std;
 
 void striker()
 {
-    string s;
-    cin>>s;
-    if(count(s.begin(),s.end(),'4')+count(s.begin(),s.end(),'7')==4 || count(s.begin(),s.end(),'4')+count(s.begin(),s.end(),'7')==7)
+    string str;
+    cin>>str;
+    int count=0;
+    for(char ch:str)
+    {
+        if(ch=='4' || ch=='7')
+            count++;
+    }
+    if(count==4 || count==7)
         cout<<"YES";
     else
         cout<<"NO";
