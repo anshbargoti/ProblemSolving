@@ -9,13 +9,13 @@ void striker()
     int n;
     cin>>n;
     int x;
-    float sum=0;
+    double sum=0;
     for(int i=0;i<n;i++)
     {
         cin>>x;
         sum+=x;
     }
-    cout<<sum/n;
+    cout<<fixed<<setprecision(5)<<sum/n;
 
 }
 
