@@ -1,4 +1,20 @@
 {
+  "CF100337300": {
+    "contest_id": 200,
+    "language": "GNU C++17",
+    "path": "codeforces\\200\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Drinks",
+    "problem_url": "https://codeforces.com/contest/200/problem/B",
+    "submission_id": "CF100337300",
+    "submission_url": "https://codeforces.com/contest/200/submission/100337300",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Dec/04/2020 15:10"
+  },
   "CF100338462": {
     "contest_id": 200,
     "language": "GNU C++17",

@@ -15,7 +15,7 @@ void striker()
         cin>>x;
         sum+=x;
     }
-    cout<<fixed<<setprecision(5)<<sum/n;
+    cout<<fixed<<setprecision(12)<<sum/n;
 
 }
 
