@@ -8,25 +8,29 @@ void striker()
 {
     int n;
     cin>>n;
-    int x;
-    cin>>x;
-    int maxi=x,mini=x;
+    int arr[n];
+    int maxi,mini;
     int count=0;
-    for(int i=1;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-        cin>>x;
-        if(x>maxi)
+        cin>>arr[i];
+        if(i==0)
         {
-            maxi=x;
+            maxi=arr[0];
+            mini=arr[0];
+        }
+        if(i>0 && arr[i]>maxi)
+        {
+            maxi=arr[i];
             count++;
         }
-        if(x<mini)
+        if(i>0 && arr[i]<mini)
         {
-            mini=x;
+            mini=arr[i];
             count++;
         }
     }
-    cout<<count;
+    cout<<(n==0?0:count);
 }
 
 
