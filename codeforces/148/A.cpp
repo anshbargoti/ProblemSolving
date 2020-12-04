@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define int long long
 
-//#define int long long
 // const int MOD = 1000000007;
 
 //  n(AUBUCUD)= ∑n|A| - ∑n|A∩B| + ∑n|A∩B∩C| - n|A+B+C+D|
