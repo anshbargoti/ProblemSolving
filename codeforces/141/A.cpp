@@ -8,13 +8,27 @@ void striker()
 {
     string s1,s2,s3;
     cin>>s1>>s2>>s3;
-    s1=s1+s2;
-    sort(s1.begin(),s1.end());
-    sort(s3.begin(),s3.end());
-    if(s1==s3)
-        cout<<"YES";
-    else
+    if(s3.size()>s1.size()+s2.size())
+    {
         cout<<"NO";
+        return;
+    }
+    map<char,int> mp;
+    for(int i=0;i<s1.size();i++)
+        mp[s1[i]]++;
+    for(int i=0;i<s2.size();i++)
+        mp[s2[i]]++;
+    for(int i=0;i<s3.size();i++)
+        mp[s3[i]]--;
+    for(auto x:mp)
+    {
+        if(x.second!=0)
+        {
+            cout<<"NO";
+            return;
+        }
+    }
+    cout<<"YES";
 }
 
 
