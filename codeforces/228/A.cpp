@@ -6,14 +6,11 @@ using namespace std;
 
 void striker()
 {
-    set<int> s;
-    int x;
-    for(int i=0;i<4;i++)
-    {
-        cin>>x;
-        s.insert(x);
-    }
-    cout<<4-s.size();
+    int s1,s2,s3,s4;
+    cin>>s1>>s2>>s3>>s4;
+    map<int,int> mp;
+    mp[s1]++,mp[s2]++,mp[s3]++,mp[s4]++;
+    cout<<4-mp.size();
 }
 
 
