@@ -1,4 +1,19 @@
 {
+  "CF100447030": {
+    "contest_id": 227,
+    "language": "GNU C++17",
+    "path": "codeforces\\227\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Effective Approach",
+    "problem_url": "https://codeforces.com/contest/227/problem/B",
+    "submission_id": "CF100447030",
+    "submission_url": "https://codeforces.com/contest/227/submission/100447030",
+    "tags": [
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Dec/05/2020 16:22"
+  },
   "CF100447117": {
     "contest_id": 227,
     "language": "GNU C++17",
