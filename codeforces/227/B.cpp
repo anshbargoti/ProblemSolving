@@ -9,16 +9,15 @@ void striker()
 {
     int n;
     cin>>n;
-    vector<int> arr(n);
+    int x;
     for(int i=0;i<n;i++)
     {
-        cin>>arr[i];
-        pos[arr[i]]=i+1;
+        cin>>x;
+        pos[x]=i+1;
     }
     int m;
     cin>>m;
     int v=0,p=0;
-    int x;
     for(int i=0;i<m;i++)
     {
         cin>>x;
