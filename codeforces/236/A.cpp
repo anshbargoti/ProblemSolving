@@ -8,12 +8,10 @@ void striker()
 {
     string s;
     cin>>s;
-    sort(s.begin(),s.end());
-    s.erase(unique(s.begin(),s.end()),s.end());
-    if(s.size()%2==0)
-        cout<<"CHAT WITH HER!";
-    else
-        cout<<"IGNORE HIM!";
+    set<int> diff;
+    for(int i=0;i<s.size();i++)
+        diff.insert(s[i]);
+    cout<<(diff.size()&1?"IGNORE HIM!":"CHAT WITH HER!");
 }
 
 
