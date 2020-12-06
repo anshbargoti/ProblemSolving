@@ -1,4 +1,19 @@
 {
+  "CF100507979": {
+    "contest_id": 34,
+    "language": "GNU C++17",
+    "path": "codeforces\\34\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Reconnaissance 2",
+    "problem_url": "https://codeforces.com/contest/34/problem/A",
+    "submission_id": "CF100507979",
+    "submission_url": "https://codeforces.com/contest/34/submission/100507979",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Dec/06/2020 15:23"
+  },
   "CF100509191": {
     "contest_id": 318,
     "language": "GNU C++17",
