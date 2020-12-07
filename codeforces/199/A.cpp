@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define int long long
 
-//#define int long long
 // const int MOD = 1000000007;
 
 void striker()
