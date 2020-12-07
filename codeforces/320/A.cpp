@@ -8,24 +8,9 @@ void striker()
 {
     string s;
     cin>>s;
-    int n=s.size();
-    string b="14";
-    string c="144";
-    for(int i=0;i<n;)
-    {
-        if(s.substr(i,3)==c)
-            i+=3;
-        else if(s.substr(i,2)==b)
-            i+=2;
-        else if(s[i]=='1')
-            i+=1;
-        else
-        {
-            cout<<"NO";
-            return;
-        }
-    }
-    cout<<"YES";
+    // Here b is an object of regex(regular expression) 
+    regex b("((1)|(14)|(144))*");
+    cout<<(regex_match(s,b)?"YES":"NO");
 }
 
 int32_t main(){
