@@ -1,4 +1,20 @@
 {
+  "CF100646873": {
+    "contest_id": 215,
+    "language": "GNU C++17",
+    "path": "codeforces\\215\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Bicycle Chain",
+    "problem_url": "https://codeforces.com/contest/215/problem/A",
+    "submission_id": "CF100646873",
+    "submission_url": "https://codeforces.com/contest/215/submission/100646873",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Dec/07/2020 22:55"
+  },
   "CF100648346": {
     "contest_id": 34,
     "language": "GNU C++17",
