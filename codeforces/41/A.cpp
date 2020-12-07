@@ -8,8 +8,16 @@ void striker()
 {
     string s,t;
     cin>>s>>t;
-    reverse(t.begin(),t.end());
-    cout<<(s==t?"YES":"NO");
+    int n=s.size();
+    for(int i=0;i<n;i++)
+    {
+        if(s[i]!=t[n-i-1])
+        {
+            cout<<"NO";
+            return;
+        }
+    }
+    cout<<"YES";
 }
 
 int32_t main(){
