@@ -16,17 +16,15 @@ void striker()
         x==5?++five:++zero;
     }
     five=(five/9)*9;
-    if(zero==0)
-        cout<<-1;
-    else if(five>0 && zero>0)
+    if(five==0 || zero==0)
+        zero==0?cout<<-1:cout<<0;
+    else
     {
         while(five--)
             cout<<5;
         while(zero--)
             cout<<0;
     }
-    else
-        cout<<0;
 }
 
 int32_t main(){
