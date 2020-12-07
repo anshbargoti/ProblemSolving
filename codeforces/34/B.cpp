@@ -8,18 +8,13 @@ void striker()
 {
     int n,m;
     cin>>n>>m;
-    vector<int> v;
+    int arr[n];
     for(int i=0;i<n;i++)
-    {
-        int x;
-        cin>>x;
-        if(x<0)
-            v.push_back(x);
-    }
+        cin>>arr[i];
+    sort(arr,arr+n);
     int sum=0;
-    sort(v.begin(),v.end());
-    for(int i=0;i<m && i<v.size();i++)
-        sum+=abs(v[i]);
+    for(int i=0;i<m && arr[i]<0;i++)
+        sum+=abs(arr[i]);
     cout<<sum;
 }
 
