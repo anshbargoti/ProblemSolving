@@ -1,4 +1,20 @@
 {
+  "CF100714321": {
+    "contest_id": 219,
+    "language": "GNU C++17",
+    "path": "codeforces\\219\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "k-String",
+    "problem_url": "https://codeforces.com/contest/219/problem/A",
+    "submission_id": "CF100714321",
+    "submission_url": "https://codeforces.com/contest/219/submission/100714321",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1000"
+    ],
+    "timestamp": "Dec/08/2020 22:13"
+  },
   "CF100717602": {
     "contest_id": 219,
     "language": "GNU C++17",

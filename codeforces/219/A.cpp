@@ -8,28 +8,18 @@ void striker()
 {
     int k;
     cin>>k;
-    string s;
+    string s,res;
     cin>>s;
-    int arr[26]={0};
-    for(int i=0;i<s.size();i++)
-        arr[s[i]-'a']++;
-    for(int i=0;i<26;i++)
+    sort(s.begin(),s.end());
+    for(int i=0;i<s.size();)
     {
-        if(arr[i]%k!=0 && arr[i]>0)
+        if(s[i]!=s[i+k-1])
         {
             cout<<-1;
             return;
         }
-        arr[i]=arr[i]/k;
-    }
-    string res;
-    for(int i=0;i<26;i++)
-    {
-        if(arr[i]>0)
-        {
-            while(arr[i]--)
-                res+=i+'a';
-        }
+        res+=s[i];
+        i=i+k;
     }
     for(int i=0;i<k;i++)
         cout<<res;
