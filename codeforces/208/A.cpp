@@ -17,16 +17,16 @@ void striker()
         s.replace(index,3," ");
         index+=1;
     }
-    cout<<s;
-    // for(int i=0;i<s.size();i++)
-    // {
-    //     if(s[i]!=' ')
-    //     {
-    //         cout<<s[i];
-    //         if(s[i+1]==' ')
-    //             cout<<" ";
-    //     }
-    // }
+    // cout<<s;
+    for(int i=0;i<s.size();i++)
+    {
+        if(s[i]!=' ')
+        {
+            cout<<s[i];
+            if(s[i+1]==' ')
+                cout<<" ";
+        }
+    }
 }
 
 int32_t main(){
