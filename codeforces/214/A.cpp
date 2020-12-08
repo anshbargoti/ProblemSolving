@@ -10,11 +10,13 @@ void striker()
     cin>>n>>m;
     int ans=0;
     int b;
-    for(int i=0;i*i<=n;i++)
+    for(int a=0;a*a<=n;a++)
     {
-        b=n-i*i;
-        if(i+b*b==m)
-            ans++;
+        for(int b=0;b*b<=m;b++)
+        {
+            if(a*a+b==n && a+b*b==m)
+                ans++;
+        }
     }
     cout<<ans;
 }
