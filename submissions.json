@@ -1,4 +1,20 @@
 {
+  "CF100734139": {
+    "contest_id": 58,
+    "language": "GNU C++17",
+    "path": "codeforces\\58\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Chat room",
+    "problem_url": "https://codeforces.com/contest/58/problem/A",
+    "submission_id": "CF100734139",
+    "submission_url": "https://codeforces.com/contest/58/submission/100734139",
+    "tags": [
+      "greedy",
+      "strings",
+      "*1000"
+    ],
+    "timestamp": "Dec/09/2020 09:48"
+  },
   "CF100754513": {
     "contest_id": 218,
     "language": "GNU C++17",
