@@ -29,7 +29,7 @@ void striker()
             count_max++;
     }
     cout<<maxi-mini<<" ";
-    if(maxi==mini)
+    if(maxi-mini==0)
         cout<<count_max*(count_max-1)/2;
     else
         cout<<count_max*count_min;
