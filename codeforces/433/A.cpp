@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define int long long
 
+//#define int long long
 // const int MOD = 1000000007;
 
 void striker()
@@ -9,18 +9,21 @@ void striker()
     int n;
     cin>>n;
     int a1=0,a2=0;
-    int arr[n];
-    for(int i=0;i<n;i++)
-        cin>>arr[i];
-    sort(arr,arr+n,greater<int>());
     for(int i=0;i<n;i++)
     {
-        if(a1<=a2)
-            a1+=arr[i];
+        int x;
+        cin>>x;
+        if(x==100)
+            a1++;
         else
-            a2+=arr[i];
+            a2++;
     }
-    cout<<(a1==a2?"YES":"NO");
+    if(n&1==1 && (a1==0 || a2==0))
+        cout<<"NO";
+    else if(2*(a1/2)+a2==n)
+        cout<<"YES";
+    else
+        cout<<"NO";
 }
 
 int32_t main(){
