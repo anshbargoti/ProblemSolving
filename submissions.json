@@ -1,4 +1,20 @@
 {
+  "CF100953441": {
+    "contest_id": 433,
+    "language": "GNU C++17",
+    "path": "codeforces\\433\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Kitahara Haruki's Gift",
+    "problem_url": "https://codeforces.com/contest/433/problem/A",
+    "submission_id": "CF100953441",
+    "submission_url": "https://codeforces.com/contest/433/submission/100953441",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Dec/11/2020 21:53"
+  },
   "CF100957948": {
     "contest_id": 186,
     "language": "GNU C++17",
