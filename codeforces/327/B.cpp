@@ -8,7 +8,7 @@ void striker()
 {
     int n;
     cin>>n;
-    for(int i=n+0;i<n+n;i++)
+    for(int i=n+1;i<=n+n;i++)
         cout<<i<<" ";
 }
 
