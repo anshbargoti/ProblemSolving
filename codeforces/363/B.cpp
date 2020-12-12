@@ -11,21 +11,28 @@ void striker()
     int arr[n];
     int prefix_sum[n];
     for(int i=0;i<n;i++)
-    {
         cin>>arr[i];
-        if(i>0)
-            arr[i]+=arr[i-1];
+    prefix_sum[0]=arr[0];
+    if(k==n)
+    {
+        cout<<1;
+        return;
     }
-    for(int i=0;i<k;i++)
-        prefix_sum[i]=arr[i];
-    for(int i=k,j=0;i<n;i++,j++)
-        prefix_sum[i]=arr[i]-arr[j];
-    int mini=min_element(prefix_sum+k-1,prefix_sum+n)-prefix_sum;
-
-    // mini_index=mini+1
-    // gap=k-1
-
-    cout<<(mini+1)-(k-1);
+    for(int i=1;i<n;i++)
+        prefix_sum[i]=arr[i]+prefix_sum[i-1];
+    // for(int i=0;i<n;i++)
+    //     cout<<prefix_sum[i]<<" ";
+    int index=0,mini=prefix_sum[k-1],j=0;
+    for(int i=k;i<n;i++)
+    {
+        if(mini>prefix_sum[i]-prefix_sum[j])
+        {
+            mini=prefix_sum[i]-prefix_sum[j];
+            index=j+1;
+        }
+        j++;
+    }
+    cout<<index+1;
 }
 
 int32_t main(){
