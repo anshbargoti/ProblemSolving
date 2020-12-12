@@ -6,19 +6,10 @@ using namespace std;
 
 void striker()
 {
-    string str;
-    cin>>str;
-    int index=0;
-    for(int i=0;i<str.size();i++)
-    {
-        if(str[i]=='0')
-        {
-            index=i;
-            break;
-        }
-    }
-    str.erase(str.begin()+index);
-    cout<<str;
+    string s;
+    cin>>s;
+    int index=s.find('0');
+    index==-1?cout<<s.substr(1):cout<<s.substr(0,index)<<s.substr(index+1);
 }
 
 int32_t main(){
