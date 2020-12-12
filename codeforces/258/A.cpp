@@ -8,8 +8,21 @@ void striker()
 {
     string s;
     cin>>s;
-    int index=s.find('0');
-    index==-1?cout<<s.substr(1):cout<<s.substr(0,index)<<s.substr(index+1);
+    int flag=false;
+    if(s.find('0')==string::npos)
+        cout<<s.substr(1,s.size()-1);
+    else
+    {
+        for(int i=0;i<s.size();i++)
+        {
+            if(s[i]=='0' && flag==false)
+            {
+                flag=true;
+                continue;
+            }
+            cout<<s[i];
+        }
+    }
 }
 
 int32_t main(){
