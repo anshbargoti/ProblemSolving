@@ -18,10 +18,7 @@ void striker()
         if(arr[x]>(n+1)/2)
             flag=false;
     }
-    if(flag)
-        cout<<"YES";
-    else
-        cout<<"NO";
+    cout<<(flag?"YES":"NO");
 }
 
 int32_t main(){
