@@ -24,7 +24,10 @@ void striker()
         cin>>x;
         mini_f=min(mini_f,x);
     }
-    cout<<(max(2*mini_p,maxi_p)<mini_f?max(2*mini_p,maxi_p):-1);
+    if(2*mini_p<mini_f && maxi_p<mini_f)
+        cout<<(2*mini_p<=maxi_p?maxi_p:2*mini_p);
+    else
+        cout<<-1;
 }
 
 int32_t main(){
