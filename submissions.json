@@ -1,4 +1,19 @@
 {
+  "CF101094912": {
+    "contest_id": 253,
+    "language": "GNU C++17",
+    "path": "codeforces\\253\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Boys and Girls",
+    "problem_url": "https://codeforces.com/contest/253/problem/A",
+    "submission_id": "CF101094912",
+    "submission_url": "https://codeforces.com/contest/253/submission/101094912",
+    "tags": [
+      "greedy",
+      "*1100"
+    ],
+    "timestamp": "Dec/13/2020 17:15"
+  },
   "CF101119544": {
     "contest_id": 236,
     "language": "GNU C++17",
