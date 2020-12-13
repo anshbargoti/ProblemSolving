@@ -16,7 +16,7 @@ void striker()
         {
             int x=i*i+j*j;
             int root=sqrt(x);
-            if(root>j && root*root==x && root<=n)
+            if(root*root==x && root<=n)
                 count++;
         }
     }
