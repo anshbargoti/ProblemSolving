@@ -8,27 +8,43 @@ void striker()
 {
     int n;
     cin>>n;
-    string s1,s2;
-    char ch;
+    string s;
+    cin>>s;
+    int left_arr[n];
+    int right_arr[n];
     for(int i=0;i<2*n;i++)
     {
-        cin>>ch;
         if(i<n)
-            s1+=ch;
+            left_arr[i]=s[i];
         else
-            s2+=ch;
+            right_arr[i-n]=s[i];
     }
-    sort(s1.begin(),s1.end());
-    sort(s2.begin(),s2.end());
-    int left=0,right=0;
-    for(int i=0;i<n;i++)
+    bool flag=false;
+    sort(left_arr,left_arr+n);
+    sort(right_arr,right_arr+n);
+    if(left_arr[0]>right_arr[0])
+        flag=true;
+    else if(left_arr[0]<right_arr[0])
+        flag=false;
+    else
     {
-        if(s1[i]<s2[i])
-            left++;
-        else if(s1[i]>s2[i])
-            right++;
+        cout<<"NO";
+        return;
     }
-    cout<<(max(left,right)==n?"YES":"NO");
+    for(int i=1;i<n;i++)
+    {
+        if(flag && left_arr[i]<=right_arr[i])
+        {
+            cout<<"NO";
+            return;
+        }
+        else if(!flag && left_arr[i]>=right_arr[i])
+        {
+            cout<<"NO";
+            return;
+        }
+    }
+    cout<<"YES";
 }
 
 int32_t main(){

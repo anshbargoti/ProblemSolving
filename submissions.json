@@ -1,4 +1,20 @@
 {
+  "CF101089156": {
+    "contest_id": 160,
+    "language": "GNU C++17",
+    "path": "codeforces\\160\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Unlucky Ticket",
+    "problem_url": "https://codeforces.com/contest/160/problem/B",
+    "submission_id": "CF101089156",
+    "submission_url": "https://codeforces.com/contest/160/submission/101089156",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Dec/13/2020 15:49"
+  },
   "CF101093535": {
     "contest_id": 160,
     "language": "GNU C++17",
