@@ -2,12 +2,13 @@
 using namespace std;
 #define int long long
 const int MOD = 1073741824;
+int count_div[1000001];
 
 void striker()
 {
     int a,b,c;
     cin>>a>>b>>c;
-    int count_div[1000001]={0};
+    
     for(int i=1;i<=a*b*c;i++)
     {
         for(int j=i;j<=a*b*c;j+=i)
