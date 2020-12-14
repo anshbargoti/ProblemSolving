@@ -1,4 +1,20 @@
 {
+  "CF101187568": {
+    "contest_id": 349,
+    "language": "GNU C++17",
+    "path": "codeforces\\349\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Cinema Line",
+    "problem_url": "https://codeforces.com/contest/349/problem/A",
+    "submission_id": "CF101187568",
+    "submission_url": "https://codeforces.com/contest/349/submission/101187568",
+    "tags": [
+      "greedy",
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Dec/14/2020 21:37"
+  },
   "CF101189667": {
     "contest_id": 166,
     "language": "GNU C++17",
