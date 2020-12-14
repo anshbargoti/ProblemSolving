@@ -26,10 +26,7 @@ void striker()
                     cost_50++;
                 }
                 else
-                {
                     flag=false;
-                    break;
-                }
             }
             else if(x==100 && i>2)
             {
@@ -41,16 +38,10 @@ void striker()
                 else if(cost_25>=3)
                     cost_25-=3;
                 else
-                {
                     flag=false;
-                    break;
-                }
             }
             else
-            {
                 flag=false;
-                break;
-            }
         }
     }
     cout<<(flag?"YES":"NO");
