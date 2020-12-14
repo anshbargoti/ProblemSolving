@@ -8,25 +8,32 @@ void striker()
 {
     int n;
     cin>>n;
-    int odd_x=0,odd_y=0;
-    bool flag=false;
+    int sum_x=0,sum_y=0;
+    int arr[n];
+    int brr[n];
     for(int i=0;i<n;i++)
     {
-        int x,y;
-        cin>>x>>y;
-        if(x&1==1)
-            odd_x++;
-        if(y&1==1)
-            odd_y++;
-        if((odd_x+odd_y)%2==1)
-            flag=true;
+        cin>>arr[i]>>brr[i];
+        sum_x+=arr[i];
+        sum_y+=brr[i];
     }
-    if(odd_x%2==0 && odd_y%2==0)
+    int count=0;
+    if(sum_x%2==0 && sum_y%2==0)
         cout<<0;
-    else if(odd_x%2!=0 && odd_y%2!=0 && flag==true)
-        cout<<1;
-    else
+    else if((sum_x+sum_y)%2==1)
         cout<<-1;
+    else
+    {
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]!=brr[i] && (arr[i]+brr[i])%2==1)
+            {
+                cout<<1;
+                return;
+            }
+        }
+        cout<<-1;
+    }
 }
 
 int32_t main(){
