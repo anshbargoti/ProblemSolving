@@ -8,16 +8,25 @@ void striker()
 {
     int n;
     cin>>n;
-    int upper=0,lower=0,odd_even=0;
+    int odd_x=0,odd_y=0;
+    bool flag=false;
     for(int i=0;i<n;i++)
     {
         int x,y;
         cin>>x>>y;
-        upper^=x%2;
-        lower^=y%2;
-        odd_even|=(x%2)^(y%2);
+        if(x&1==1)
+            odd_x++;
+        if(y&1==1)
+            odd_y++;
+        if((odd_x+odd_y)%2==1)
+            flag=true;
     }
-    cout<<(upper+lower?(odd_even&&upper==lower?1:-1):0);
+    if(odd_x%2==0 && odd_y%2==0)
+        cout<<0;
+    else if(odd_x%2!=0 && odd_y%2!=0 && flag==true)
+        cout<<1;
+    else
+        cout<<-1;
 }
 
 int32_t main(){
