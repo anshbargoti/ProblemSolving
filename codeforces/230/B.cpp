@@ -56,6 +56,7 @@ int32_t main(){
     {
         //cout<<"#Case: "<<i+1<<endl;
         striker();
+        //cout<<endl;
     }
      return 0;
 }
