@@ -1,4 +1,23 @@
 {
+  "CF101441890": {
+    "contest_id": 289,
+    "language": "GNU C++17",
+    "path": "codeforces\\289\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Polo the Penguin and Matrix",
+    "problem_url": "https://codeforces.com/contest/289/problem/B",
+    "submission_id": "CF101441890",
+    "submission_url": "https://codeforces.com/contest/289/submission/101441890",
+    "tags": [
+      "brute force",
+      "dp",
+      "implementation",
+      "sortings",
+      "ternary search",
+      "*1400"
+    ],
+    "timestamp": "Dec/16/2020 21:06"
+  },
   "CF101503709": {
     "contest_id": 450,
     "language": "GNU C++17",
