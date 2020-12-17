@@ -6,32 +6,12 @@ const int MOD = 1000000007;
 
 void striker()
 {
-    int f1,f2,n;
-    cin>>f1>>f2>>n;
-    int ans;
-    switch(n%6)
-    {
-        case 1:
-            ans=f1;
-            break;
-        case 2:
-            ans=f2;
-            break;
-        case 3:
-            ans=f2-f1;
-            break;
-        case 4:
-            ans=-f1;
-            break;
-        case 5:
-            ans=-f2;
-            break;
-        case 0:
-            ans=f1-f2;
-            break;
-    }
-    ans=ans%MOD;
-    cout<<(ans<0?ans+MOD:ans);
+    int f1,f2;
+    cin>>f1>>f2;
+    int n;
+    cin>>n;
+    int arr[6]={f1-f2,f1,f2,f2-f1,-f1,-f2};
+    cout<<(arr[n%6]%MOD+MOD)%MOD;
 }
 
 int32_t main(){
