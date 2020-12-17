@@ -1,4 +1,19 @@
 {
+  "CF101568166": {
+    "contest_id": 462,
+    "language": "GNU C++17",
+    "path": "codeforces\\462\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Appleman and Card Game",
+    "problem_url": "https://codeforces.com/contest/462/problem/B",
+    "submission_id": "CF101568166",
+    "submission_url": "https://codeforces.com/contest/462/submission/101568166",
+    "tags": [
+      "greedy",
+      "*1300"
+    ],
+    "timestamp": "Dec/17/2020 21:40"
+  },
   "CF101621980": {
     "contest_id": 260,
     "language": "GNU C++17",
