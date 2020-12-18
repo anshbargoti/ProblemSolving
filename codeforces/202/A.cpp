@@ -9,20 +9,12 @@ void striker()
 {
     string s;
     cin>>s;
-    char ch=s[0];
-    int count=1;
-    for(int i=1;i<s.size();i++)
+    sort(s.begin(),s.end());
+    for(int i=s.size()-1;i>=0;i--)
     {
-        if(ch<s[i])
-        {
-            ch=s[i];
-            count=1;
-        }
-        else if(ch==s[i])
-            count++;
+        if(s[i]==s[s.size()-1])
+            cout<<s[i];
     }
-    for(int i=0;i<count;i++)
-        cout<<ch;
 }
 
 int32_t main(){
