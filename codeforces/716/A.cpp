@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
-int arr[100001];
 
 //const int MOD = 1000000007;
 
@@ -10,6 +9,8 @@ void striker()
 {
     int n,c;
     cin>>n>>c;
+    int arr[n+1];
+    arr[0]=0;
     for(int i=1;i<=n;i++)
         cin>>arr[i];
     int count=0;
