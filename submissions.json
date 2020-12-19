@@ -1,4 +1,20 @@
 {
+  "CF101782144": {
+    "contest_id": 78,
+    "language": "GNU C++17",
+    "path": "codeforces\\78\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Haiku",
+    "problem_url": "https://codeforces.com/contest/78/problem/A",
+    "submission_id": "CF101782144",
+    "submission_url": "https://codeforces.com/contest/78/submission/101782144",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Dec/19/2020 20:50"
+  },
   "CF101786438": {
     "contest_id": 591,
     "language": "GNU C++17",
