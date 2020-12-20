@@ -9,8 +9,14 @@ void striker()
 {
     int n;
     cin >> n;
-    int res = (n > 10 && n < 22 ? n == 20 ? 15 : 4 : 0);
-    cout << res;
+    if(n > 21 || n < 11)
+    {
+        cout<<0;
+        return;
+    }
+    int arr[12] = {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, 1};
+    int ans = 4*arr[n-10];
+    cout << (n == 20 ? ans - 1 : ans);
 }
 
 int32_t main(){
