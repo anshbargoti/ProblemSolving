@@ -1,4 +1,19 @@
 {
+  "CF101856539": {
+    "contest_id": 104,
+    "language": "GNU C++17",
+    "path": "codeforces\\104\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Blackjack",
+    "problem_url": "https://codeforces.com/contest/104/problem/A",
+    "submission_id": "CF101856539",
+    "submission_url": "https://codeforces.com/contest/104/submission/101856539",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Dec/20/2020 20:00"
+  },
   "CF101857898": {
     "contest_id": 104,
     "language": "GNU C++17",

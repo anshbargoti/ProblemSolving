@@ -9,13 +9,8 @@ void striker()
 {
     int n;
     cin >> n;
-    n = n - 10;
-    if ( ( n >= 1 && n <= 9 ) || n == 11 )
-        cout << 4;
-    else if ( n == 10 )
-        cout << 15;
-    else
-        cout << 0;
+    int res = (n > 10 && n < 22 ? n == 20 ? 15 : 4 : 0);
+    cout << res;
 }
 
 int32_t main(){
