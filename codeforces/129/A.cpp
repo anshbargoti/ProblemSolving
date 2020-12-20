@@ -9,15 +9,17 @@ void striker()
 {
     int n;
     cin >> n;
-    int count_even = 0, sum = 0;
+    int count_even = 0;
     for (int i = 0; i < n; i++)
     {
         int x;
         cin >> x;
         count_even += x % 2 == 0;
-        sum += x;
     }
-    cout << (sum % 2 == 0 ? count_even : n - count_even);
+    if ( (n - count_even) % 2 == 0 )
+        cout << (count_even > 0 ? count_even : 0);
+    else
+        cout << n - count_even;
 }
 
 int32_t main(){
