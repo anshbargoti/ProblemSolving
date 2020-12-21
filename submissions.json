@@ -2567,6 +2567,22 @@
     ],
     "timestamp": "Dec/20/2020 22:58"
   },
+  "CF101969794": {
+    "contest_id": 336,
+    "language": "GNU C++17",
+    "path": "codeforces\\336\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Vasily the Bear and Triangle",
+    "problem_url": "https://codeforces.com/contest/336/problem/A",
+    "submission_id": "CF101969794",
+    "submission_url": "https://codeforces.com/contest/336/submission/101969794",
+    "tags": [
+      "implementation",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Dec/21/2020 20:02"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
