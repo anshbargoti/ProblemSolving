@@ -9,14 +9,12 @@ void striker()
 {
     int n, m;
     cin >> n >> m;
-    int a = n * (n + 1) / 2;
-    m = m % a;
     int i = 1;
     int ans = 0;
     while (m >= i)
     {
         m -= i;
-        ++i;
+        i = (i + 1) % (n + 1);
         if (i == n + 1)
             i = 1;
     }

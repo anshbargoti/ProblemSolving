@@ -2583,6 +2583,22 @@
     ],
     "timestamp": "Dec/21/2020 20:02"
   },
+  "CF101980240": {
+    "contest_id": 92,
+    "language": "GNU C++17",
+    "path": "codeforces\\92\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Chips",
+    "problem_url": "https://codeforces.com/contest/92/problem/A",
+    "submission_id": "CF101980240",
+    "submission_url": "https://codeforces.com/contest/92/submission/101980240",
+    "tags": [
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Dec/21/2020 22:20"
+  },
   "CF101980595": {
     "contest_id": 92,
     "language": "GNU C++17",
