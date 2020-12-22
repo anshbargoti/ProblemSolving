@@ -2679,6 +2679,22 @@
     ],
     "timestamp": "Dec/21/2020 23:34"
   },
+  "CF102052008": {
+    "contest_id": 168,
+    "language": "GNU C++17",
+    "path": "codeforces\\168\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Wizards and Demonstration",
+    "problem_url": "https://codeforces.com/contest/168/problem/A",
+    "submission_id": "CF102052008",
+    "submission_url": "https://codeforces.com/contest/168/submission/102052008",
+    "tags": [
+      "implementation",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Dec/22/2020 20:26"
+  },
   "CF102053772": {
     "contest_id": 75,
     "language": "GNU C++17",
