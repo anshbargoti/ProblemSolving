@@ -10,23 +10,31 @@ void striker()
     int n;
     cin >> n;
     int arr[n];
+    int postv = INT_MIN;
     for (int i = 0; i < n; i++)
+    {
         cin >> arr[i];
+        if (arr[i] > 0)
+            postv = arr[i];
+    }
     sort(arr, arr + n);
     cout << 1 << " " << arr[0] << "\n";
-    if (arr[n-1] > 0)
+    if (postv != INT_MIN)
     {
-        cout << 1 << " " << arr[n-1] << "\n";
+        cout << 1 << " " << postv << "\n";
         cout << n - 2 << " ";
-        for (int i = 1; i < n-1; i++)
-            cout << arr[i] << " ";
     }
     else
     {
         cout << 2 << " " << arr[1] << " " << arr[2] << "\n";
         cout << n - 3 << " ";
-        for (int i = 3; i < n; i++)
-            cout << arr[i] << " ";
+        arr[1] = postv, arr[2] = postv;
+    }
+    for (int i = 1; i < n; i++)
+    {
+        if (postv == arr[i])
+            continue;
+        cout << arr[i] << " ";
     }
 }
 
