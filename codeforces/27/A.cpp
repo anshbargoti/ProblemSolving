@@ -9,7 +9,7 @@ void striker()
 {
     int n;
     cin >> n;
-    bool visited[3002] = {false};
+    bool visited[3001] = {false};
     for (int i = 0; i < n; i++)
     {
         int x;
@@ -17,14 +17,12 @@ void striker()
         visited[x] = true;
     }
     int i;
-    for (i = 1; i < 3002; i++)
+    for (i = 1; i < 3001; i++)
     {
         if (!visited[i])
-        {
-            cout << i;
             break;
-        }
     }
+    cout << i;
 }
 
 int32_t main(){
