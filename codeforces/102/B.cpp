@@ -15,20 +15,15 @@ void striker()
         cout << 0;
         return;
     }
-    int count_tot = 0;
-    for (char x : str)
-        count_tot += (x - '0');
-    int res = 1;
-    while (count_tot > 9)
+    int res = 0, count_tot;
+    while (n != 1)
     {
-        int temp = 0;
-        while (count_tot > 0)
-        {
-            temp += count_tot % 10;
-            count_tot /= 10;
-        }
-        ++res;
-        count_tot = temp;
+        count_tot = 0;
+        for (int i = 0; i < n; i++)
+            count_tot += str[i] - '0';
+        str = to_string(count_tot);
+        res++;
+        n = str.size();
     }
     cout << res;
 }
