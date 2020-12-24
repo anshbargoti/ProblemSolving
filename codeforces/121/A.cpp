@@ -23,28 +23,33 @@ void pre_compute()
     }
 }
 
-int calc(int n)
-{
-    int ans = 0;
-    for (int i = 1; i < vc.size(); i++)
-    {
-        if (vc[i] < n)
-            ans += vc[i] * (vc[i] - vc[i-1]);
-        else
-        {
-            ans += vc[i] * (n - vc[i-1]);
-            break;
-        }
-    }
-    return ans;
-}
-
 void striker()
 {
     pre_compute();
     int l, r;
     cin >> l >> r;
-    cout << calc(r) - calc(l-1);
+    int ans_right = 0, ans_left = 0;
+    for (int i = 1; i < vc.size(); i++)
+    {
+        if (vc[i] < r)
+            ans_right += vc[i] * (vc[i] - vc[i-1]);
+        else
+        {
+            ans_right += vc[i] * (r - vc[i-1]);
+            break;
+        }
+    }
+    for (int i = 1; i < vc.size(); i++)
+    {
+        if (vc[i] < l-1)
+            ans_left += vc[i] * (vc[i] - vc[i-1]);
+        else
+        {
+            ans_left += vc[i] * (l-1 - vc[i-1]);
+            break;
+        }
+    }
+    cout << ans_right - ans_left;
 }
 
 int32_t main(){
