@@ -8,8 +8,11 @@ char arr[12][12];
 
 bool check(int a,int b)
 {
-    if (arr[a][b] == 'P')
+    if (arr[a][b] == 'W')
+    {
+        arr[a][b] = '.';
         return true;
+    }
     return false;
 }
 
@@ -30,7 +33,7 @@ void striker()
     {
         for (int j = 1; j <= m; j++)
         {
-            if (arr[i][j] == 'W')
+            if (arr[i][j] == 'P')
             {
                 if (check(i-1,j))
                     count++;
@@ -40,6 +43,7 @@ void striker()
                     count++;
                 else if (check(i,j+1))
                     count++;
+                arr[i][j] == '.';
             }
         }
     }
