@@ -10,24 +10,36 @@ void striker()
 {
     int n;
     cin >> n;
-    int arr[n];
-    for (int i = 0; i < n; i++)
-        cin >> arr[i];
-    if (n <= 2)
-        cout << n;
+    int a, b;
+    if (n == 1)
+    {
+        cin >> a;
+        cout << 1;
+        return;
+    }
     else
     {
-        int ans = 2, res = INT_MIN;
-        for (int i = 2; i < n; i++)
+        cin >> a >> b;
+        if (n == 2)
         {
-            if (arr[i] == arr[i-1] + arr[i-2])
-                ans++;
-            else
-                ans = 2;
-            res = max(res, ans);    
+            cout << 2;
+            return;
         }
-        cout << res;
     }
+    int ans = 2, res = INT_MIN;
+    for (int i = 1; i <= n-2; i++)
+    {
+        int x;
+        cin >> x;
+        if (x == a + b)
+            ans++;
+        else
+            ans = 2;
+        a = b;
+        b = x;
+        res = max(res, ans);    
+    }
+    cout << res;
 }
 
 int32_t main(){
