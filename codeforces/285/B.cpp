@@ -9,20 +9,32 @@ void striker()
 {
     int n, s, t;
     cin >> n >> s >> t;
-    --s, --t;
-    int arr[n], brr[n] = {0};
-    for (int i = 0; i < n; i++)
+    int arr[n+1];
+    for (int i = 1; i <= n; i++)
         cin >> arr[i];
-    int count = 0;
-    while (!brr[s])
+    if (s == t)
     {
-        if (s == t)
-            break;
-        brr[s] = 1;
-        s = arr[s] - 1;
-        count++;
+        cout << 0;
+        return;
     }
-    cout << (s != t ? -1 : count);
+    int count = 0, vist = 0, curr = arr[s];
+    while (true)
+    {
+        if (vist == n)
+        {
+            cout << -1;
+            return;
+        }
+        if (curr == t)
+            break;
+        else
+        {
+            curr = arr[curr];
+            count++;
+        }
+        vist++;
+    }
+    cout << count+1;
 }
 
 int32_t main(){
