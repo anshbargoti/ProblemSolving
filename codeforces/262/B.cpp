@@ -9,23 +9,22 @@ void striker()
 {
     int n, k;
     cin >> n >> k;
-    int sum = 0, mini=INT_MAX;
+    int sum = 0, flag = 1, mini=INT_MAX;
     for (int i = 0; i < n; i++)
     {
         int x;
         cin >> x;
         if (k > 0 && x <= 0)
         {
-            sum += -x;
+            x *= -1;
+            sum += x;
             k--;
         }
         else
             sum += x;
-        mini = min( abs(x), mini );
+        mini = min( x, mini );
     }
-    if (k % 2)
-        sum -= 2*mini;
-    cout << sum;
+    cout << (k % 2 == 1 ? sum - 2*mini : sum);
 }
 
 int32_t main(){
@@ -38,7 +37,7 @@ int32_t main(){
     freopen("output.txt", "w", stdout);
 #endif
     
-    int t = 1;
+    int t=1;
 //    cin>>t;
     for(int i=0;i<t;i++)
     {
