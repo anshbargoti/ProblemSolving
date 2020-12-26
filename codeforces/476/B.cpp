@@ -12,7 +12,7 @@ void recr(int k, int p, int m)
     if (k == 0)
     {
         n++;
-        if (p == m)
+        if (p==m)
             x++;
         return;
     }
