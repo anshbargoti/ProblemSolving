@@ -6,16 +6,26 @@ using namespace std;
 //const int MOD = 1000000007;
 
 
+int result(int x, int y, int z)
+{
+    if ((x + y - z) / 2 < 0)
+        return -1;
+    return (x + y - z) / 2;
+}
+
+
 void striker()
 {
     int a, b, c;
     cin >> a >> b >> c;
-    int sum = a + b + c;
-    a = (sum - 2 * a) / 2, b = (sum - 2 * b) / 2, c = (sum - 2 * c) / 2;
-    if (sum % 2 != 0 || a < 0 || b < 0 || c < 0)
+    int bond1, bond2, bond3;
+    bond1 = result(c, b, a);
+    bond2 = result(c, a, b);
+    bond3 = result(b, a, c);
+    if (bond1 == -1 || bond2 == -1 || bond3 == -1 || (a + b + c) % 2 != 0)
         cout << "Impossible";
     else
-        cout << c << " " << a << " " << b;
+        cout << bond3 << " " << bond1 << " " << bond2;
 }
 
 int32_t main(){
