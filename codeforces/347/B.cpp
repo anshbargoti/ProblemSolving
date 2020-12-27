@@ -10,22 +10,28 @@ void striker()
 {
     int n;
     cin >> n;
-    int count = 0, swap = 0, arr[n];
-    for (int i = 0; i < n; i++)
-        cin >> arr[i];
+    int count = 0, arr[n];
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] == i)
-            count++;
-        else if (arr[arr[i]] == i)
-            swap = 1;
+        cin >> arr[i];
+        count += arr[i] == i ? 1 : 0;
     }
     if (count == n)
-        cout << count;
-    else if (swap)
-        cout << count + 2;
+        cout << n;
     else
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if (arr[i] == i)
+                continue;
+            else if (arr[arr[i]] == i)
+            {
+                cout << count + 2;
+                return;
+            }
+        }
         cout << count + 1;
+    }
 }
 
 int32_t main(){
