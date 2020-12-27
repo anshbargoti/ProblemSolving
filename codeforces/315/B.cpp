@@ -13,29 +13,27 @@ void striker()
     int arr[n+1] = {0};
     for (int i = 1; i <= n; i++)
         cin >> arr[i];
-    int increment = 0, type;
+    int type2 = 0, type;
     for (int i = 0; i < m; i++)
     {
         cin >> type;
-        switch (type)
+        if (type == 1)
         {
-            case 1:
-                int v, x;
-                cin >> v >> x;
-                arr[v] = x - increment;
-                break;
-     
-            case 2:
-                int y;
-                cin >> y;
-                increment += y;
-                break;
-     
-            case 3:
-                int q;
-                cin >> q;
-                cout << arr[q] + increment << "\n";
-                break;
+            int v, x;
+            cin >> v >> x;
+            arr[v] = x - type2;
+        }
+        else if (type == 2)
+        {
+            int y;
+            cin >> y;
+            type2 += y;
+        }
+        else
+        {
+            int q;
+            cin >> q;
+            cout << arr[q] + type2 << "\n";
         }
     }
 }
@@ -51,7 +49,7 @@ int32_t main(){
 #endif
     
     int t = 1;
-//    cin>>t;
+//    cin >> t;
     for(int i=0;i<t;i++)
     {
         //cout<<"#Case: "<<i+1<<endl;
