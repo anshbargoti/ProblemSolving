@@ -17,32 +17,26 @@ int S(int x)
     return sum;
 }
 
-
+// int poww(int a, int n)
+// {
+//     int res = 1;
+//     for(int i = 1; i <= n; i++)
+//         res *= a;
+//     return res;
+// }
 
 int power(int a, int n)
 {
     int res = 1;
-    for(int i = 1; i <= n; i++)
-        res *= a;
+    while (n)
+    {
+        if (n & 1)
+            res *= a;
+        a *= a;
+        n >>= 1;
+    }
     return res;
 }
-
-
-
-// int power(int a, int n)
-// {
-//     int res = 1;
-//     while (n)
-//     {
-//         if (n & 1)
-//             res *= a;
-//         a *= a;
-//         n >>= 1;
-//     }
-//     return res;
-// }
-
-
 
 void striker()
 {
