@@ -31,7 +31,7 @@ void striker()
         else
             c++;
     }
-    int low = 0, high = 1e12 + 100;
+    int low = 0, high = max({nb, ns, nc}) + ruble;
     int mid, res = 0;
     while (low <= high)
     {

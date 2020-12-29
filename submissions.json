@@ -3271,6 +3271,22 @@
     ],
     "timestamp": "Dec/29/2020 00:38"
   },
+  "CF102715830": {
+    "contest_id": 371,
+    "language": "GNU C++17",
+    "path": "codeforces\\371\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Hamburgers",
+    "problem_url": "https://codeforces.com/contest/371/problem/C",
+    "submission_id": "CF102715830",
+    "submission_url": "https://codeforces.com/contest/371/submission/102715830",
+    "tags": [
+      "binary search",
+      "brute force",
+      "*1600"
+    ],
+    "timestamp": "Dec/30/2020 00:02"
+  },
   "CF102716187": {
     "contest_id": 371,
     "language": "GNU C++17",
