@@ -22,8 +22,8 @@ void striker()
         }
         else if (arr[b])
         {
-            arr[a] = arr[b] % 3 + 1;
-            arr[c] = arr[a] % 3 + 1;
+            arr[c] = arr[b] % 3 + 1;
+            arr[a] = arr[c] % 3 + 1;
         }
         else if (arr[c])
         {
