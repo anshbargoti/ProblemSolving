@@ -16,12 +16,13 @@ void striker()
         cin >> x >> y;
         arr[x] += y;
     }
-    int ans = 0, temp, curr = v;
-    for (int i = 1; i < 3005; i++)
+    int ans = 0, temp, curr;
+    for (int i = 1; i <= 3005; i++)
     {
+        curr = v;
         if (arr[i - 1])
         {
-            temp = min (v, arr[i - 1]);
+            temp = min (curr, arr[i - 1]);
             ans += temp;
             arr[i - 1] -= temp;
             curr -= temp; 
@@ -33,7 +34,6 @@ void striker()
             arr[i] -= temp;
             curr -= temp;
         }
-        curr = v;
     }
     cout << ans;
 }
