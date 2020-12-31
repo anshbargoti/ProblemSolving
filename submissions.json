@@ -3430,6 +3430,23 @@
     ],
     "timestamp": "Dec/31/2020 21:47"
   },
+  "CF102930724": {
+    "contest_id": 371,
+    "language": "GNU C++17",
+    "path": "codeforces\\371\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Fox Dividing Cheese",
+    "problem_url": "https://codeforces.com/contest/371/problem/B",
+    "submission_id": "CF102930724",
+    "submission_url": "https://codeforces.com/contest/371/submission/102930724",
+    "tags": [
+      "math",
+      "number theory",
+      "*1300"
+    ],
+    "timestamp": "Dec/31/2020 23:27"
+  },
   "CF102973735": {
     "contest_id": 96,
     "language": "GNU C++17",
