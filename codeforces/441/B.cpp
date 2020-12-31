@@ -19,19 +19,13 @@ void striker()
     int ans = 0, temp, curr = v;
     for (int i = 1; i <= 3001; i++)
     {
-        if (arr[i - 1])
-        {
-            temp = min (curr, arr[i - 1]);
-            ans += temp;
-            curr -= temp; 
-        }
-        if (curr)
-        {
-            temp = min (curr, arr[i]);
-            ans += temp;
-            arr[i] -= temp;
-        }
         curr = v;
+        temp = min (curr, arr[i - 1]);
+        ans += temp;
+        curr -= temp;
+        temp = min (curr, arr[i]);
+        ans += temp;
+        arr[i] -= temp;
     }
     cout << ans;
 }
