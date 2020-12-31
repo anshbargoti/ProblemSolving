@@ -17,9 +17,9 @@ void striker()
         arr[x] += y;
     }
     int ans = 0, temp, curr = v;
-    for (int i = 1; i <= 3001; i++)
+    for (int i = 1; i < 3005; i++)
     {
-        curr = v;
+        int curr = v;
         temp = min (curr, arr[i - 1]);
         ans += temp;
         curr -= temp;
