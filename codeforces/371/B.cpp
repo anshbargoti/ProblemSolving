@@ -1,60 +1,35 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a2, a3, a5, b2, b3, b5;
+int a, b, res;
 
 
 //#define int long long
 //const int MOD = 1000000007;
 
+void div(int n)
+{
+    int count_a = 0, count_b = 0;
+    while (a % n == 0)
+    {
+        a /= n;
+        count_a++;
+    }
+    while (b % n == 0)
+    {
+        b /= n;
+        count_b++;
+    }
+    res += abs(count_a - count_b);
+}
+
 
 void striker()
 {
-    int a, b;
     cin >> a >> b;
-    while (true)
-    {
-        if (a % 2 == 0)
-        {
-            a2++;
-            a /= 2;
-        }
-        else if (a % 3 == 0)
-        {
-            a3++;
-            a /= 3;
-        }
-        else if (a % 5 == 0)
-        {
-            a5++;
-            a /= 5;
-        }
-        else
-            break;
-    }
-    while (true)
-    {
-        if (b % 2 == 0)
-        {
-            b2++;
-            b /= 2;
-        }
-        else if (b % 3 == 0)
-        {
-            b3++;
-            b /= 3;
-        }
-        else if (b % 5 == 0)
-        {
-            b5++;
-            b /= 5;
-        }
-        else
-            break;
-    }
-    if (a == b)
-        cout << abs(a2 - b2) + abs(a3 - b3) + abs(a5 - b5);
-    else
-        cout << -1;
+    div(2);
+    div(3);
+    div(5);
+    cout << (a == b ? res : -1);
 }
 
 int32_t main(){
