@@ -9,7 +9,7 @@ vector<int> vc;
 
 void pre_compute(int curr, int f, int s)
 {
-    if (curr > 1e10)
+    if (curr > 1e11)
         return;
     if (f == s && curr != 0)
         vc.push_back(curr);
