@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-179 | [B - Ciel and Flowers](https://codeforces.com/contest/322/problem/B) | [GNU C++17](./codeforces/322/B.cpp) | `combinatorics` `math` `*1600` | Jan/01/2021 23:07 | 
+180 | [B - Ciel and Flowers](https://codeforces.com/contest/322/problem/B) | [GNU C++17](./codeforces/322/B.cpp) | `combinatorics` `math` `*1600` | Jan/01/2021 23:07 | 
+179 | [B - Lucky Numbers (easy)](https://codeforces.com/contest/96/problem/B) | [GNU C++17](./codeforces/96/B.cpp) | `binary search` `bitmasks` `brute force` `*1300` | Jan/01/2021 21:53 | 
 178 | [B - Valera and Fruits](https://codeforces.com/contest/441/problem/B) | [GNU C++17](./codeforces/441/B.cpp) | `greedy` `implementation` `*1400` | Dec/31/2020 21:47 | 
 177 | [B - Flag Day](https://codeforces.com/contest/357/problem/B) | [GNU C++17](./codeforces/357/B.cpp) | `constructive algorithms` `implementation` `*1400` | Dec/30/2020 21:58 | 
 176 | [C - Hamburgers](https://codeforces.com/contest/371/problem/C) | [GNU C++17](./codeforces/371/C.cpp) | `binary search` `brute force` `*1600` | Dec/30/2020 00:08 | 
