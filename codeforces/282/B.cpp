@@ -38,7 +38,7 @@ int32_t main(){
     freopen("output.txt", "w", stdout);
 #endif
     
-    int t = 1;
+    int t = 2;
 //    cin >> t;
     for(int i=0;i<t;i++)
     {
