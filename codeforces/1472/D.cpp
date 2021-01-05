@@ -13,9 +13,8 @@ void striker()
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];
-    sort(arr, arr + n);
-    reverse(arr, arr + n);
-    int alice = 0;
+    sort(arr, arr + n, greater<int>());
+    int alice = 0, bob = 0;
     for (int i = 0; i < n; i++)
     {
         if (i % 2 == 0)
@@ -26,12 +25,12 @@ void striker()
         else
         {
             if (arr[i] % 2 == 1)
-                alice -= arr[i];
+                bob += arr[i];
         }
     }
-    if (alice > 0)
+    if (alice > bob)
         cout << "Alice";
-    else if (alice < 0)
+    else if (alice < bob)
         cout << "Bob";
     else
         cout << "Tie";
