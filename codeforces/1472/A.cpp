@@ -11,36 +11,14 @@ void striker()
 {
     int w, h, n;
     cin >> w >> h >> n;
-    int count = 1;
-    if (w % 2 == 1 && h % 2 == 1 && n > 1)
-        cout << "NO";
-    else if (n == 1)
-        cout << "YES";
-    else
+    int res = 1;
+    w = w * h;
+    while (w % 2 == 0)
     {
-        while (count < n)
-        {
-            if (w % 2 == 0 && h % 2 == 0)
-            {
-                count *= 4;
-                w /= 2;
-                h /= 2;
-            }
-            else if (w % 2 == 0)
-            {
-                count *= 2;
-                w /= 2;
-            }
-            else if (h % 2 == 0)
-            {
-                count *= 2;
-                h /= 2;
-            }
-            else
-                break;
-        }
-        cout << (count >= n ? "YES" : "NO");
+        w /= 2;
+        res *= 2;
     }
+    cout << (res >= n ? "YES" : "NO");
 }
 
 int32_t main(){
