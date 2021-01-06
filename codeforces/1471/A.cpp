@@ -15,10 +15,10 @@ void striker()
     {
         int a;
         cin >> a;
-        maxi += a / x + (a % x > 0);
+        maxi += a / x + (a % x != 0);
         mini += a;
     }
-    cout << mini / x + (mini % x > 0) << " " << maxi;
+    cout << mini / x + (mini % x != 0) << " " << maxi;
 }
 
 int32_t main(){
