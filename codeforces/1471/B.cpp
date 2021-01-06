@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
+#define pb push_back
+#define f first
+#define s second
 
 
 //const int MOD = 1000000007;
@@ -10,30 +13,27 @@ void striker()
 {
     int n, x;
     cin >> n >> x;
-    queue<int> q;
-    int sum = 0, count_time, val, flag = 1;
+    vector<pair<int, int>> vc;
     for (int i = 0; i < n; i++)
     {
-        cin >> val;
-        q.push(val);
-        q.push(1);
+        int x;
+        cin >> x;
+        vc.pb({x, 1});
     }
-    while(q.empty() == false)
+    int i = 0, flag = 1, sum = 0;
+    while (i != vc.size())
     {
-        val = q.front();
-        q.pop();
-        count_time = q.front();
-        q.pop();
-        sum += count_time * val;
-        if (val % x == 0 && flag)
+        if (vc[i].f % x == 0 && flag)
         {
-            val = val / x;
-            count_time = count_time * x;
-            q.push(val);
-            q.push(count_time);
+            vc.pb( {vc[i].f / x, vc[i].s * x} );
+            sum += (vc[i].f / x) * (vc[i].s * x);
         }
         else
+        {
+            sum += vc[i].f * vc[i].s;
             flag = 0;
+        }
+        i++;
     }
     cout << sum;
 }
