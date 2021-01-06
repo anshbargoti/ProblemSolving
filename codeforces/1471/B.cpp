@@ -20,21 +20,18 @@ void striker()
         cin >> x;
         vc.pb({x, 1});
     }
-    int i = 0, flag = 1, sum = 0;
+    int i = 0;
     while (i != vc.size())
     {
-        if (vc[i].f % x == 0 && flag)
-        {
+        if (vc[i].f % x == 0)
             vc.pb( {vc[i].f / x, vc[i].s * x} );
-            sum += (vc[i].f / x) * (vc[i].s * x);
-        }
         else
-        {
-            sum += vc[i].f * vc[i].s;
-            flag = 0;
-        }
+            break;
         i++;
     }
+    int sum = 0;
+    for (int i = 0; i < vc.size(); i++)
+        sum += vc[i].f * vc[i].s;
     cout << sum;
 }
 
