@@ -19,7 +19,7 @@ void striker()
     int res = 0;
     for (int i = 1, j = 1; i <= n; i++)
     {
-        if (j <= k[i])
+        if (j <= m && j <=k[i])
             res += c[j++];
         else
             res += c[k[i]];
