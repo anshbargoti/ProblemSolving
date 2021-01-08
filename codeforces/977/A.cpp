@@ -13,16 +13,14 @@ void striker()
     int n, k;
     cin >> n >> k;
     int temp;
-    while (true)
+    while (k)
     {
         temp = min(n % 10, k);
-        k -= (temp > 0 ? min(temp, k) : 1);
         if (temp == 0)
             n /= 10;
         else
             n -= temp;
-        if (k < 1)
-            break;
+        k -= (temp > 0 ? temp : 1);
     }
     cout << n;
 }
