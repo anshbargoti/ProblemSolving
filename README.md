@@ -12,8 +12,9 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-201 | [A - Divisibility Problem](https://codeforces.com/contest/1328/problem/A) | [GNU C++17](./codeforces/1328/A.cpp) | `math` `*800` | Jan/09/2021 23:26 | 
-200 | [A - Calculating Function](https://codeforces.com/contest/486/problem/A) | [GNU C++17](./codeforces/486/A.cpp) | `implementation` `math` `*800` | Jan/09/2021 23:22 | 
+202 | [A - Divisibility Problem](https://codeforces.com/contest/1328/problem/A) | [GNU C++17](./codeforces/1328/A.cpp) | `math` `*800` | Jan/09/2021 23:26 | 
+201 | [A - Calculating Function](https://codeforces.com/contest/486/problem/A) | [GNU C++17](./codeforces/486/A.cpp) | `implementation` `math` `*800` | Jan/09/2021 23:22 | 
+200 | [A - Hulk](https://codeforces.com/contest/705/problem/A) | [GNU C++17](./codeforces/705/A.cpp) | `implementation` `*800` | Jan/09/2021 23:14 | 
 199 | [A - Wrong Subtraction](https://codeforces.com/contest/977/problem/A) | [GNU C++17](./codeforces/977/A.cpp) | `implementation` `*800` | Jan/08/2021 22:01 | 
 198 | [A - Bear and Big Brother](https://codeforces.com/contest/791/problem/A) | [GNU C++17](./codeforces/791/A.cpp) | `implementation` `*800` | Jan/08/2021 21:31 | 
 197 | [A - Domino piling](https://codeforces.com/contest/50/problem/A) | [GNU C++17](./codeforces/50/A.cpp) | `greedy` `math` `*800` | Jan/08/2021 21:23 | 
