@@ -12,10 +12,29 @@ void striker()
     int n;
     cin >> n;
     int ans = 0;
-    for (int x : {100, 20, 10, 5, 1})
+    if (n / 100 > 0)
     {
-        ans += n / x;
-        n %= x;
+        ans += n / 100;
+        n = n % 100;
+    }
+    if (n / 20 > 0)
+    {
+        ans += n / 20;
+        n = n % 20;
+    }
+    if (n / 10 > 0)
+    {
+        ans += n / 10;
+        n = n % 10;
+    }
+    if (n / 5 > 0)
+    {
+        ans += n / 5;
+        n = n % 5;
+    }if (n / 1 > 0)
+    {
+        ans += n / 1;
+        n = n % 1;
     }
     cout << ans;
 }
