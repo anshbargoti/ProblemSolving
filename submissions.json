@@ -4568,6 +4568,23 @@
     ],
     "timestamp": "Jan/13/2021 22:05"
   },
+  "CF104356112": {
+    "contest_id": 509,
+    "language": "GNU C++17",
+    "path": "codeforces\\509\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Maximum in Table",
+    "problem_url": "https://codeforces.com/contest/509/problem/A",
+    "submission_id": "CF104356112",
+    "submission_url": "https://codeforces.com/contest/509/submission/104356112",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Jan/14/2021 23:24"
+  },
   "CF104356780": {
     "contest_id": 1358,
     "language": "GNU C++17",
