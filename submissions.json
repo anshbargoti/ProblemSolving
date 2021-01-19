@@ -4973,6 +4973,23 @@
     ],
     "timestamp": "Jan/18/2021 23:54"
   },
+  "CF104845725": {
+    "contest_id": 1398,
+    "language": "GNU C++17",
+    "path": "codeforces\\1398\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Bad Triangle",
+    "problem_url": "https://codeforces.com/contest/1398/problem/A",
+    "submission_id": "CF104845725",
+    "submission_url": "https://codeforces.com/contest/1398/submission/104845725",
+    "tags": [
+      "geometry",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jan/19/2021 23:54"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
