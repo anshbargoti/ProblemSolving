@@ -34,12 +34,9 @@ void striker()
 {
     int n, k;
     cin >> n >> k;
-    for (int i = 0; i < k; i++)
-        cout << 'a';
-    n = n - k;
-    string ans = "cba";
+    string s = "abc";
     for (int i = 0; i < n; i++)
-        cout << ans[i % 3];
+        cout << s[i % 3];
 }
 
 int32_t main(){
