@@ -5352,6 +5352,21 @@
     ],
     "timestamp": "Jan/24/2021 21:30"
   },
+  "CF105362229": {
+    "contest_id": 1475,
+    "language": "GNU C++17",
+    "path": "codeforces\\1475\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "New Year's Number",
+    "problem_url": "https://codeforces.com/contest/1475/problem/B",
+    "submission_id": "CF105362229",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105362229",
+    "tags": [
+      "math"
+    ],
+    "timestamp": "Jan/25/2021 21:15"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
