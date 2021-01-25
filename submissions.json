@@ -5352,6 +5352,29 @@
     ],
     "timestamp": "Jan/24/2021 21:30"
   },
+  "CF105354338": {
+    "contest_id": 1475,
+    "language": "GNU C++17",
+    "path": "codeforces\\1475\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Odd Divisor",
+    "problem_url": "https://codeforces.com/contest/1475/problem/A",
+    "submission_id": "CF105354338",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105354338",
+    "tags": [
+      "binary search",
+      "bitmasks",
+      "brute force",
+      "games",
+      "greedy",
+      "implementation",
+      "math",
+      "number theory",
+      "ternary search"
+    ],
+    "timestamp": "Jan/25/2021 21:04"
+  },
   "CF105362229": {
     "contest_id": 1475,
     "language": "GNU C++17",
