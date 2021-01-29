@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+285 | [C - Nezzar and Symmetric Array](https://codeforces.com/contest/1478/problem/C) | [GNU C++17](./codeforces/1478/C.cpp) | `constructive algorithms` `implementation` `math` `sortings` `*1700` | Jan/29/2021 12:04 | 
 284 | [B - Nezzar and Lucky Number](https://codeforces.com/contest/1478/problem/B) | [GNU C++17](./codeforces/1478/B.cpp) | `dp` `math` | Jan/28/2021 20:47 | 
 283 | [A - Nezzar and Colorful Balls](https://codeforces.com/contest/1478/problem/A) | [GNU C++17](./codeforces/1478/A.cpp) |  | Jan/28/2021 20:08 | 
 282 | [A - Cards](https://codeforces.com/contest/701/problem/A) | [GNU C++17](./codeforces/701/A.cpp) | `greedy` `implementation` `*800` | Jan/28/2021 20:02 | 
