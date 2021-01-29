@@ -5505,6 +5505,24 @@
     ],
     "timestamp": "Jan/29/2021 12:04"
   },
+  "CF105908484": {
+    "contest_id": 1476,
+    "language": "GNU C++17",
+    "path": "codeforces\\1476\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Inflation",
+    "problem_url": "https://codeforces.com/contest/1476/problem/B",
+    "submission_id": "CF105908484",
+    "submission_url": "https://codeforces.com/contest/1476/submission/105908484",
+    "tags": [
+      "binary search",
+      "brute force",
+      "greedy",
+      "math"
+    ],
+    "timestamp": "Jan/29/2021 21:10"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
