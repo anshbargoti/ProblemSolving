@@ -5541,6 +5541,23 @@
     ],
     "timestamp": "Jan/30/2021 20:59"
   },
+  "CF106115573": {
+    "contest_id": 1476,
+    "language": "GNU C++17",
+    "path": "codeforces\\1476\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Longest Simple Cycle",
+    "problem_url": "https://codeforces.com/contest/1476/problem/C",
+    "submission_id": "CF106115573",
+    "submission_url": "https://codeforces.com/contest/1476/submission/106115573",
+    "tags": [
+      "dp",
+      "graphs",
+      "greedy"
+    ],
+    "timestamp": "Jan/31/2021 20:43"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
