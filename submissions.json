@@ -5663,6 +5663,22 @@
     ],
     "timestamp": "Feb/02/2021 16:24"
   },
+  "CF106380920": {
+    "contest_id": 431,
+    "language": "GNU C++17",
+    "path": "codeforces\\431\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Black Square",
+    "problem_url": "https://codeforces.com/contest/431/problem/A",
+    "submission_id": "CF106380920",
+    "submission_url": "https://codeforces.com/contest/431/submission/106380920",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Feb/03/2021 20:25"
+  },
   "CF106381591": {
     "contest_id": 584,
     "language": "GNU C++17",
