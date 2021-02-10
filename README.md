@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+307 | [A - One-dimensional Japanese Crossword](https://codeforces.com/contest/721/problem/A) | [GNU C++17](./codeforces/721/A.cpp) | `implementation` `*800` | Feb/10/2021 22:40 | 
 306 | [A - Greg's Workout](https://codeforces.com/contest/255/problem/A) | [GNU C++17](./codeforces/255/A.cpp) | `implementation` `*800` | Feb/09/2021 22:36 | 
 305 | [B - The Great Hero](https://codeforces.com/contest/1480/problem/B) | [GNU C++17](./codeforces/1480/B.cpp) | `greedy` `implementation` `sortings` | Feb/08/2021 20:42 | 
 304 | [A - Yet Another String Game](https://codeforces.com/contest/1480/problem/A) | [GNU C++17](./codeforces/1480/A.cpp) | `games` `greedy` `strings` | Feb/07/2021 20:11 | 
