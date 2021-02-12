@@ -5919,6 +5919,23 @@
     ],
     "timestamp": "Feb/11/2021 23:02"
   },
+  "CF107221629": {
+    "contest_id": 1485,
+    "language": "GNU C++17",
+    "path": "codeforces\\1485\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Replace and Keep Sorted",
+    "problem_url": "https://codeforces.com/contest/1485/problem/B",
+    "submission_id": "CF107221629",
+    "submission_url": "https://codeforces.com/contest/1485/submission/107221629",
+    "tags": [
+      "combinatorics",
+      "dp",
+      "math"
+    ],
+    "timestamp": "Feb/12/2021 21:54"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
