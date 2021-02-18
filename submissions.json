@@ -5971,6 +5971,22 @@
     ],
     "timestamp": "Feb/13/2021 20:49"
   },
+  "CF107842083": {
+    "contest_id": 1486,
+    "language": "GNU C++17",
+    "path": "codeforces\\1486\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Eastern Exhibition",
+    "problem_url": "https://codeforces.com/contest/1486/problem/B",
+    "submission_id": "CF107842083",
+    "submission_url": "https://codeforces.com/contest/1486/submission/107842083",
+    "tags": [
+      "geometry",
+      "sortings"
+    ],
+    "timestamp": "Feb/18/2021 21:33"
+  },
   "CF84552117": {
     "contest_id": 69,
     "language": "GNU C++14",
