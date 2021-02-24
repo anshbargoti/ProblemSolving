@@ -12,15 +12,10 @@ void striker()
     cin >> p >> a >> b >> c;
     int ans = 0;
     int x = a, y = b, z = c;
-    if (p == a || p == b || p == c)
-    {
-        cout << 0;
-        return;
-    }
-    x = (x - p % a);
-    y = (y - p % b);
-    z = (z - p % c);
-    cout << min({x % a, y % b, z % c});
+    x = (x - p % a) % a;
+    y = (y - p % b) % b;
+    z = (z - p % c) % c;
+    cout << min({x, y, z});
 }
 
 
