@@ -6087,6 +6087,23 @@
     ],
     "timestamp": "Feb/24/2021 21:29"
   },
+  "CF108682698": {
+    "contest_id": 1491,
+    "language": "GNU C++17",
+    "path": "codeforces\\1491\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "K-th Largest Value",
+    "problem_url": "https://codeforces.com/contest/1491/problem/A",
+    "submission_id": "CF108682698",
+    "submission_url": "https://codeforces.com/contest/1491/submission/108682698",
+    "tags": [
+      "brute force",
+      "greedy",
+      "implementation"
+    ],
+    "timestamp": "Feb/28/2021 19:23"
+  },
   "CF108703190": {
     "contest_id": 1491,
     "language": "GNU C++17",
