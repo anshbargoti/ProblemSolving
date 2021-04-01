@@ -6205,6 +6205,22 @@
     ],
     "timestamp": "Mar/29/2021 21:54"
   },
+  "CF111659001": {
+    "contest_id": 1505,
+    "language": "GNU C++17",
+    "path": "codeforces\\1505\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Is it rated - 2",
+    "problem_url": "https://codeforces.com/contest/1505/problem/A",
+    "submission_id": "CF111659001",
+    "submission_url": "https://codeforces.com/contest/1505/submission/111659001",
+    "tags": [
+      "implementation",
+      "interactive"
+    ],
+    "timestamp": "Apr/01/2021 20:10"
+  },
   "CF111884602": {
     "contest_id": 1504,
     "language": "GNU C++17",
