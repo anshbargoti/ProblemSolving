@@ -11,34 +11,27 @@ void striker()
     cin >> n;
     string s;
     cin >> s;
-    int ct = 0, cm = 0;
-    for (char ch : s)
+    int count_t = 0, count_m = 0;
+    for (int i = 0; i < n; i++)
     {
-        if (ch == 'T')
-            ct++;
+        if (s[i] == 'T')
+            count_t++;
         else
-            cm++;
+            count_m++;
     }
-    if (ct != 2 * cm)
+    if (count_t != 2 * count_m)
     {
         cout << "NO";
         return;
     }
-    int count = 0;
+    int curr_t = 0, curr_m = 0;
     for (int i = 0; i < n; i++)
     {
-        count += (s[i] == 'T' ? 1 : -1);
-        if (count < 0)
-        {
-            cout << "NO";
-            return;
-        }
-    }
-    count = 0;
-    for (int i = n - 1; i >= 0; i--)
-    {
-        count += (s[i] == 'T' ? 1 : -1);
-        if (count < 0)
+        if (s[i] == 'T')
+            curr_t++;
+        else
+            curr_m++;
+        if (curr_m > curr_t || count_m - curr_m > count_t - curr_t)
         {
             cout << "NO";
             return;
