@@ -27,25 +27,22 @@ void striker()
             return;
         }
     }
+    sort(arr, arr + n);
     int sum = 0;
     vector<int> vc;
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n; i++)
     {
         if (sum + arr[i] == k)
+        {
+            if (i == n - 1)
+            {
+                cout << "NO";
+                return;
+            }
             swap(arr[i], arr[i + 1]);
+        }
         sum += arr[i];
         vc.push_back(arr[i]);
-    }
-    vc.push_back(arr[n - 1]);
-    sum = 0;
-    for (int i = 0; i < vc.size(); i++)
-    {
-        sum += vc[i];
-        if (sum == k)
-        {
-            cout << "NO";
-            return;
-        }
     }
     cout << "YES" << endl;
     for (auto x : vc)
